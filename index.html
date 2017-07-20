@@ -240,4 +240,55 @@ MM_reloadPage(true);
 <tr>
     <td height="25"><img src="./Starfleet Academy_files/nav-bottom.jpg" border="0"></td>
   </tr>
-</tbody></table></body></html>
+  <tr>
+   <link rel="stylesheet" href="https://code.s4d.io/widget-space/production/main.css">
+
+<link rel="stylesheet" href="styles.css">
+ <div id="space-widget-demo-container" class="widget-demo-container collapse" style="display: none;">
+            <div id="space-widget-demo-control" class="clearfix widget-demo-control"><span class="demo-title">Space Widget Demo</span>
+              <div class="example-code icon-week icon tooltip-icon">
+                <div class="tooltip-message">See example code</div>
+              </div>
+              <div class="minimum icon icon-right-arrow tooltip-icon">
+                <div class="tooltip-message">Show or hide chat</div>
+              </div>
+              <div class="close icon icon-exit tooltip-icon">
+                <div class="tooltip-message">End chat</div>
+              </div>
+            </div>
+            <div class="widget-demo-wrapper">
+               
+               <div id="widget-demo" class="ciscospark-widget">
+              
+              </div>
+            </div>
+          </div>
+  </tr>
+</tbody>
+</table>
+
+ 
+    <script src="https://code.s4d.io/widget-space/production/bundle.js"></script>
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script>
+     window.onload = function() {
+
+  var widgetEl = document.getElementById('space-widget-demo-container');
+  widgetEl.style.display =  'block';
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "http://api.ciobanu.org:3000/guest_token", false);
+  xhttp.send();
+   var JSONObject = JSON.parse(xhttp.responseText);
+  var token = JSONObject['token'];
+  var widgetEl = document.getElementById('widget-demo');
+ 
+  // Init a new widget
+  ciscospark.widget(widgetEl).spaceWidget({
+    accessToken: token,
+    toPersonEmail: 'kakaruna@cisco.com'
+  });
+};
+
+   </script>
+
+</body></html>
