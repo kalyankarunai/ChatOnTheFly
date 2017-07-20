@@ -1,0 +1,25 @@
+p {  font: 10px Verdana, Arial, Helvetica, sans-serif; color: #000000}
+.banner {  position: absolute; visibility: visible; left: 0px; top: 0px; clip:  rect(   )}
+.title {  left: 177px; top: 0px; clip:     rect(   ); position: absolute; visibility: visible; border-style: none}
+.hometable {  background-color: #F6F6F5; position: absolute; left: 160px; top: 90px; clip:    rect(   )}
+.navtable {
+	position: absolute;
+	left: 5px;
+ 	background-repeat: repeat-y;
+	top: 90px;
+	background-image: url('/images/nav-bg.jpg');
+	
+}
+.announce {  background-attachment: fixed; background-repeat: no-repeat; background-position: left top; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 15px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color: #333333}
+.quicklink {  font: bold 9px Verdana, Arial, Helvetica, sans-serif; background-repeat: no-repeat; background-position: left top; clip:   rect(   ); background-attachment: fixed; padding-top: 30px; padding-right: 6px; padding-bottom: 6px; padding-left: 10px}
+.nav {  font: bold 10px Verdana, Arial, Helvetica, sans-serif; background-attachment: fixed; background-repeat: no-repeat; background-position: left top; color: #666666; text-decoration: none; padding-left: 5px; padding-top: 2px}
+.sfi {  position: absolute; left: 250px; clip:   rect(   )}
+.menu {  background-attachment: fixed; background-image: url(/images/menu.gif); background-repeat: no-repeat; background-position: left top}
+.submenu {  font: 10px Verdana, Arial, Helvetica, sans-serif; color: #F6F6F5}
+a:hover {  color: #990000; text-decoration: underline}
+disclaimer {  position: relative; left: 100px; clip:  rect(   )}
+.disclaimer {  position: absolute; left: 50px; clip:  rect(   )}
+.mouseover {  padding-top: 0px; background-attachment: fixed; background-image: url(/images/nav-on.gif); background-repeat: no-repeat; background-position: left top}
+a:visited {  }
+.bodytext { background-attachment: fixed; background-repeat: no-repeat; background-position: left top; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font: 11px Verdana, Arial, Helvetica, sans-serif}
+a {  color: #004A6F}

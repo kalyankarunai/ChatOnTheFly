@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- your webpage info goes here -->
+
+    <meta charset="utf8">
+    <title>Space Widget Demo</title>
+    <link rel="stylesheet" href="https://code.s4d.io/widget-space/production/main.css">
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+</head>
+<body onload="getUserToken();">
+
+<!-- webpage content goes here in the body -->
+
+	<div id="page">
+		<div id="logo">
+			<h1><a href="/" id="logoLink">My First Website</a></h1>
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="#/home.html">Home</a></li>
+				<li><a href="#/about.html">About</a></li>
+				<li><a href="#/contact.html">Contact</a></li>
+			</ul>	
+		</div>
+		<div id="content">
+			<h2>Home</h2>
+			<p>
+				This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
+			</p>
+			<p> 
+				I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about). 
+			</p>
+		</div>
+		</div>
+		
+ <div id="space-widget-demo-container" class="widget-demo-container collapse" style="display: block;">
+            <div id="space-widget-demo-control" class="clearfix widget-demo-control"><span class="demo-title">Space Widget Demo</span>
+              <div class="example-code icon-week icon tooltip-icon">
+                <div class="tooltip-message">See example code</div>
+              </div>
+              <div class="minimum icon icon-right-arrow tooltip-icon">
+                <div class="tooltip-message">Show or hide chat</div>
+              </div>
+              <div class="close icon icon-exit tooltip-icon">
+                <div class="tooltip-message">End chat</div>
+              </div>
+            </div>
+            <div class="widget-demo-wrapper">
+               
+               <div id="widget-demo" class="ciscospark-widget">
+              
+              </div>
+            </div>
+          </div>
+	
+		  <script src="https://code.s4d.io/widget-space/production/bundle.js"></script>
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+
+function getUserToken() {
+
+  // var widgetEl = document.getElementById('space-widget-demo-container');
+  // widgetEl.style.display =  'block';
+
+var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "http://api.ciobanu.org:3000/guest_token", false);
+  xhttp.send();
+   var JSONObject = JSON.parse(xhttp.responseText);
+  var token = JSONObject['token'];
+  var widgetEl = document.getElementById('widget-demo');
+  // var toPerson = document.getElementById('emailText').textContent;
+ 
+  // if(toPerson === ''){
+  //   toPerson = 'kakaruna@cisco.com'
+  // }
+  // Init a new widget
+  ciscospark.widget(widgetEl).spaceWidget({
+    accessToken: token,
+    toPersonEmail: 'kakaruna@cisco.com'
+  });
+
+}
+
+</script> 
+</body>
+</html>
