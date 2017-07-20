@@ -1,0 +1,34 @@
+
+.widget-demo-container {
+    display: block;
+    position: fixed;
+    bottom: 40;
+    right: 0;
+    width: 100%;
+    max-width: 31.25rem;
+    background: #fff;
+    z-index: 99999;
+    box-shadow: 0 0 0.1875rem #000;
+    height: 40.5rem;
+}
+.ciscospark-widget {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+    font-family: 'CiscoSans TT Light', Helvetica, Arial, sans-serif;
+}
+.widget-demo-control {
+    height: 3.125rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    background: #409cd6;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
