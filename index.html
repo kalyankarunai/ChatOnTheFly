@@ -271,12 +271,13 @@ MM_reloadPage(true);
     <script src="https://code.s4d.io/widget-space/production/bundle.js"></script>
    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
    <script>
+
      window.onload = function() {
 
   var widgetEl = document.getElementById('space-widget-demo-container');
   widgetEl.style.display =  'block';
   var xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "http://api.ciobanu.org:3000/guest_token", false);
+  xhttp.open("GET", "https://jwtauth.ngrok.io/guest_token", false);
   xhttp.send();
    var JSONObject = JSON.parse(xhttp.responseText);
   var token = JSONObject['token'];
